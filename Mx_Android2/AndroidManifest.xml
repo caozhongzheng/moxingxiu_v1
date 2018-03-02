@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moinapp.wuliao"
+    android:installLocation="preferExternal"
+    android:versionCode="4"
+    android:versionName="1.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- shareSDK -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.moinapp.wuliao.M_Application"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.moinapp.wuliao.activity.Splash_Activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.moinapp.wuliao.activity.Guide_Activity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Main_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Expression_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.News_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Video_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Game_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.WealthCenter_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.EmailRegist_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Regist_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.MyStar_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.MobileRetrieve_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.EmailRetrieve_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Information_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.AlterEmail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.AlterPassword_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Setting_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Feedback_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.MyGifts_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.SendGifts_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.SelectFriend_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.MyFriends_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.MyLikes_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.MyComments_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.MyMessages_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Chatting_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.UserData_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Search_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.VideoPlay_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.OpenGift_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Announcement_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moinapp.wuliao.activity.Agreement_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.moinapp.wuliao.activity.Function_Activity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="com.moinapp.wuliao.activity.About_Activity" 
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.moinapp.wuliao.service.MsgService" />
+
+        <!-- shareSDK -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- 如果您的项目集微信或者微信朋友圈,需要在package目录下创建wxapi目录再放置WXEntryActivity -->
+        <activity
+            android:name="com.moinapp.wuliao.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 聚合短信验证码 -->
+        <meta-data
+            android:name="JUHE_KEY"
+            android:value="22ace590de23dd8d8616c7dfa1b661d2" />
+
+        <!-- umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="550645bffd98c5505c000efa" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+    </application>
+
+</manifest>

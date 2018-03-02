@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_normal"
+    android:paddingTop="@dimen/margin_normal"
+    android:background="@color/ad_layout_bg" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/ad_width"
+            android:layout_height="@dimen/ad_height"
+            android:background="@drawable/ad_frame"
+            android:padding="@dimen/margin_3" >
+
+            <ImageView
+                android:id="@+id/ad1_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/ad1_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#4d000000"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/ad_width"
+            android:layout_height="@dimen/ad_height"
+            android:background="@drawable/ad_frame"
+            android:padding="@dimen/margin_3" >
+
+            <ImageView
+                android:id="@+id/ad2_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/ad2_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#4d000000"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/head_layout_bg_color" >
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back" />
+        <TextView
+            android:id="@+id/title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/email_modify_head_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size" />
+	</RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+        android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+        android:layout_marginTop="@dimen/margin_40" >
+
+        <EditText
+            android:id="@+id/old_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:background="@android:color/transparent"
+            android:hint="@string/old_email_address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/app_textColor_light"
+            android:textSize="@dimen/edittext_hint_textsize" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/edittext_line_bg" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+        android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+        android:layout_marginTop="@dimen/login_edittext_margin_top_bottom" >
+
+        <EditText
+            android:id="@+id/new_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:background="@android:color/transparent"
+            android:hint="@string/new_email_address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/app_textColor_light"
+            android:textSize="@dimen/edittext_hint_textsize" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/edittext_line_bg" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/email_alter_submit"
+        android:layout_marginTop="@dimen/margin_40"
+        android:text="@string/regist_sure"
+        style="@style/btn_textview_style" />
+
+</LinearLayout>

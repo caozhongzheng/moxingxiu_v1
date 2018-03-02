@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/login_edittext_margin_top_bottom" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/regist_edittext_tip1"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/app_textColor_light"
+                    android:textSize="@dimen/edittext_hint_textsize" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_regist_true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_bg" />
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/login_edittext_margin_top_bottom" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/regist_edittext_tip2"
+                    android:textColorHint="@color/app_textColor_light"
+                    android:textSize="@dimen/edittext_hint_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_regist_true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_bg" />
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/login_edittext_margin_top_bottom" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/regist_edittext_tip5"
+                    android:inputType="number"
+                    android:textColorHint="@color/app_textColor_light"
+                    android:textSize="@dimen/edittext_hint_textsize" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_regist_true" />
+            </LinearLayout>
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_bg" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/login_edittext_margin_top_bottom" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/password1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/regist_edittext_tip3"
+                    android:textColorHint="@color/app_textColor_light"
+                    android:textSize="@dimen/edittext_hint_textsize" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_bg" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/login_edittext_margin_top_bottom"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/login_edittext_margin_top_bottom" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/password2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/regist_edittext_tip4"
+                    android:textColorHint="@color/app_textColor_light"
+                    android:textSize="@dimen/edittext_hint_textsize" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_bg" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/email_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/login_btn_margin_bottom"
+            android:layout_marginTop="@dimen/login_btn_margin_top"
+            android:background="@drawable/btn_bg_filled"
+            android:gravity="center"
+            android:text="@string/regist_head_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/edittext_hint_textsize"
+            android:clickable="true"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+</LinearLayout>

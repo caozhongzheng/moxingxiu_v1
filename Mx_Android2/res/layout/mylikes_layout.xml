@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userdata_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/head_layout_bg_color" >
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back" />
+	
+        <TextView
+            android:id="@+id/title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mylikes_head_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size" />
+	</RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mylikes_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderBackground="#e2e2e2"
+        ptr:ptrMode="both" />
+
+</LinearLayout>

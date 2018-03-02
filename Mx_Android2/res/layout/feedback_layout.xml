@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userdata_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/head_layout_bg_color" >
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back" />
+	
+        <TextView
+            android:id="@+id/title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/feedback_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size" />
+	</RelativeLayout>
+
+    <EditText
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:hint="@string/feedback_hint"
+        android:gravity="top"
+        android:background="@drawable/comment_shape"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:padding="@dimen/margin_big"
+        android:textSize="@dimen/textSize_normal" />
+
+    <TextView
+        android:id="@+id/feedback_submit"
+        android:layout_marginTop="@dimen/margin_30"
+        android:text="@string/feedback_submit"
+        style="@style/btn_textview_style" />
+
+</LinearLayout>

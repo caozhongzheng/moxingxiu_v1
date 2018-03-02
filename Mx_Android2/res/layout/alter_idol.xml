@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="@dimen/dialog_width_big"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/comment_shape"
+    	android:orientation="vertical" >
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_20"
+	        android:text="@string/i_idol"
+	        android:textColor="@color/title_color"
+	        android:textSize="@dimen/title_size"
+	        android:gravity="center" />
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_normal"
+	        android:text="@string/alter_idol_detail"
+	        android:textColor="@color/app_textColor_light"
+	        android:textSize="@dimen/textSize_12"
+	        android:gravity="center" />
+    
+    	<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/margin_20" >
+            <EditText
+                android:id="@+id/idol1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/title_size"
+                android:textColor="@color/title_color" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_line_bg" />
+        </FrameLayout>
+        
+    	<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/margin_20" >
+            <EditText
+                android:id="@+id/idol2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/title_size"
+                android:textColor="@color/title_color" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_line_bg" />
+        </FrameLayout>
+        
+    	<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginRight="@dimen/login_edittext_margin_horizontal"
+            android:layout_marginTop="@dimen/margin_20" >
+            <EditText
+                android:id="@+id/idol3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_edittext_margin_horizontal"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/title_size"
+                android:textColor="@color/title_color" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/edittext_line_bg" />
+        </FrameLayout>
+        
+    	<View
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/wealthcenter_content_line_height"
+	        android:layout_marginTop="@dimen/margin_20"
+	        android:background="@color/login_head_line_color" />
+    	<LinearLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+    	    <TextView 
+    	        android:id="@+id/alter_idol_cancel"
+    	        android:layout_width="0dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_weight="1"
+    	        android:text="@string/cancel"
+    	        android:textSize="@dimen/title_size"
+    	        android:textColor="@color/app_textColor_light"
+    	        android:gravity="center"
+    	        android:background="@drawable/dialog_btn_bg_left"
+    	        android:paddingTop="@dimen/margin_normal"
+    	        android:paddingBottom="@dimen/margin_normal"
+    	        android:clickable="true"
+    	        android:onClick="onClick" />
+    	    <View 
+    	        android:layout_width="@dimen/wealthcenter_content_line_height"
+    	        android:layout_height="match_parent"
+    	        android:background="@color/login_head_line_color" />
+    	    <TextView 
+    	        android:id="@+id/alter_idol_sure"
+    	        android:layout_width="0dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_weight="1"
+    	        android:text="@string/sure"
+    	        android:textSize="@dimen/title_size"
+    	        android:textColor="@color/head_layout_bg_color"
+    	        android:background="@drawable/dialog_btn_bg_right"
+    	        android:gravity="center"
+    	        android:paddingTop="@dimen/margin_normal"
+    	        android:paddingBottom="@dimen/margin_normal"
+    	        android:clickable="true"
+    	        android:onClick="onClick" />
+    	    
+    	</LinearLayout>
+    </LinearLayout>
+	
+</LinearLayout>

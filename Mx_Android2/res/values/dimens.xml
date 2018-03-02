@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="banner2_height">92dp</dimen>
+    <dimen name="lm_height">533dp</dimen>
+    <dimen name="lm_width">102dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_big">12dp</dimen>
+    <dimen name="margin_bigger">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="ad_margin">10dp</dimen>
+    <dimen name="ad_margin_left">4dp</dimen>
+    <dimen name="ad_width">105dp</dimen>
+    <dimen name="ad_height">64dp</dimen>
+    <dimen name="ad_star_width">50dp</dimen>
+    <dimen name="textSize_10">10sp</dimen>
+    <dimen name="textSize_11">11sp</dimen>
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_13">13sp</dimen>
+    <dimen name="textSize_normal">14sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    
+    
+    <dimen name="share_margin">35dp</dimen>
+    <dimen name="dividing_line">1dp</dimen>
+    
+    <dimen name="banner1_height">122dp</dimen>
+
+    <!-- 主界面 -->
+    <dimen name="main_adapter_item_layout_width">161dp</dimen>
+    <dimen name="main_adapter_item_layout_height">96dp</dimen>
+    <dimen name="main_adapter_item_width">136dp</dimen>
+    <dimen name="main_adapter_item_height">92dp</dimen>
+    <dimen name="main_adapter_item_margin">3dp</dimen>
+    <dimen name="main_adapter_item_textsize">6sp</dimen>
+    <dimen name="main_adapter_item_label_height">12dp</dimen>
+    <dimen name="main_adapter_item_label_margin">8dp</dimen>
+    <dimen name="main_adapter_item_title_size">12sp</dimen>
+    <dimen name="main_adapter_item_type_margin_left">2dp</dimen>
+    <dimen name="main_adapter1_top_bottom_margin">8dp</dimen>
+    <dimen name="main_adapter2_top_bottom_margin">30dp</dimen>
+    <dimen name="main_adapter3_top_bottom_margin">8dp</dimen>
+    <dimen name="search_edittext_width">220dp</dimen>
+    <dimen name="search_edittext_margin_right">8dp</dimen>
+    <dimen name="search_edittext_icon_margin_right">4dp</dimen>
+    <dimen name="search_submit_btn_margin_right">12dp</dimen>
+    <dimen name="search_edittext_textsize">15sp</dimen>
+    <dimen name="search_submit_textsize">12sp</dimen>
+    <dimen name="bottom_menu_margin_bottom">12dp</dimen>
+    <dimen name="bottom_menu_margin_leftandright">32dp</dimen>
+    <dimen name="head_menu_left_bg_w_h">40dp</dimen>
+    <dimen name="auto_textview_textsize">14sp</dimen>
+
+    <!-- 左侧界面 -->
+    <dimen name="leftmenu_name_textsize">18sp</dimen>
+    <dimen name="leftmenu_name_margin_top">8dp</dimen>
+    <dimen name="leftmenu_mb_margin_top">4dp</dimen>
+    <dimen name="leftmenu_mg_icon_drawablepadding">24dp</dimen>
+    <dimen name="leftmenu_comments_favorite_item_margin">50dp</dimen>
+    <dimen name="leftmenu_comments_favorite_item_textsize">8sp</dimen>
+    <dimen name="leftmenu_comments_favorite_margin_topandbottom">18dp</dimen>
+    <dimen name="leftmenu_timing_margin_topandbottom">18dp</dimen>
+    <dimen name="leftmenu_timing_margin_topandbotto2">12dp</dimen>
+    <dimen name="leftmenu_timing_tip1_textsize">14sp</dimen>
+    <dimen name="leftmenu_timing_tip2_textsize">10sp</dimen>
+    <dimen name="leftmenu_fingerprint_margin_left">4dp</dimen>
+    <dimen name="leftmenu_line_height">1dp</dimen>
+    <dimen name="leftmenu_bottom_textsize">13sp</dimen>
+    <dimen name="leftmenu_bottom_textsize1">9sp</dimen>
+    <dimen name="leftmenu_buttom_v_height">200dp</dimen>
+    <dimen name="leftmenu_buttom_v_margin">76dp</dimen>
+    <dimen name="leftmenu_no_login">24dp</dimen>
+    <dimen name="leftmenu_bottom_item_drawablepadding">8dp</dimen>
+
+    <!-- 登录 -->
+    <dimen name="edittext_hint_textsize">18sp</dimen>
+    <dimen name="login_use_order_textsize">16sp</dimen>
+    <dimen name="login_edittext_padding_horizontal">11dp</dimen>
+    <dimen name="login_edittext_paddint_vertical">13dp</dimen>
+    <dimen name="login_edittext_margin_horizontal">15dp</dimen>
+    <dimen name="login_edittext_margin_top_bottom">22dp</dimen>
+    <dimen name="login_btn_margin_top">12dp</dimen>
+    <dimen name="login_btn_margin_bottom">40dp</dimen>
+    <dimen name="login_order_margin_top_bottom">20dp</dimen>
+    <dimen name="login_order_margin_left_right">12dp</dimen>
+    <dimen name="login_user_mobile_margin_top">54dp</dimen>
+    <dimen name="login_user_email_margin_top">22dp</dimen>
+    <dimen name="dialog_title_height">38dp</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+    <dimen name="dialog_height">180dp</dimen>
+    
+    <dimen name="login_btn_width">228dp</dimen>
+    <dimen name="login_btn_height">37dp</dimen>
+    <dimen name="login_btn_textSize">20sp</dimen>
+    
+    <!-- 注册 -->
+    <dimen name="regist_btn_width">207dp</dimen>
+    <dimen name="regist_btn_height">33dp</dimen>
+    
+    <dimen name="regist_bg1_wight">238dp</dimen>
+    <dimen name="regist_bg2_wight">46dp</dimen>
+
+    <!-- 评论列表 -->
+    <dimen name="comment_avatar">44dp</dimen>
+    
+    <!-- 个人信息 -->
+    <dimen name="information_marginTop_title">20dp</dimen>
+    <dimen name="padding_vertical">10dp</dimen>
+    <dimen name="item_margin">10dp</dimen>
+    <dimen name="arrow_padding">15dp</dimen>
+    <dimen name="dialog_width_big">330dp</dimen>
+    <dimen name="information_icon_width_heigt">44dp</dimen>
+    
+    <dimen name="information_head_avatar">60dp</dimen>
+    <dimen name="information_head_height">146dp</dimen>
+
+    <!-- 财富中心 -->
+    <dimen name="wealthcenter_icon_margin_top">24dp</dimen>
+    <dimen name="wealthcenter_icon_width_height">52dp</dimen>
+    <dimen name="wealthcenter_name_margin_top">8dp</dimen>
+    <dimen name="wealthcenter_name_textsize">13sp</dimen>
+    <dimen name="wealthcenter_top_bg_height">144dp</dimen>
+    <dimen name="wealthcenter_bottom_margin_bottom">8dp</dimen>
+    <dimen name="wealthcenter_top_textsize">16sp</dimen>
+    <dimen name="wealthcenter_top_tip_textsize">10sp</dimen>
+    <dimen name="wealthcenter_top_share_margin_left">24dp</dimen>
+    <dimen name="wealthcenter_title_margin_left">8dp</dimen>
+    <dimen name="wealthcenter_title_margin_bottom">3dp</dimen>
+    <dimen name="wealthcenter_content_item_height">54dp</dimen>
+    <dimen name="wealthcenter_content_line_height">1dp</dimen>
+    <dimen name="wealthcenter_arrow_margin_right">22dp</dimen>
+    <dimen name="wealthcenter_content_title_margin_left">28dp</dimen>
+    <dimen name="wealthcenter_content_title_textsize">16sp</dimen>
+    
+    <dimen name="wealthcenter_item_height">60dp</dimen>
+
+    <!-- 我的星迹 -->
+    <dimen name="mystar_top_icon_margin_top">22dp</dimen>
+    <dimen name="mystar_top_icon_margin_left_right">36dp</dimen>
+    <dimen name="mystar_name_margin_left">8dp</dimen>
+    <dimen name="mystar_name_textsize">18sp</dimen>
+    <dimen name="mystar_address_testsize">10sp</dimen>
+    <dimen name="mystar_tip_textsize">13sp</dimen>
+    <dimen name="mystar_tip_margin">12dp</dimen>
+    <dimen name="mystar_listitem_arrow_textsize">9sp</dimen>
+    <dimen name="mystar_listitem_time_day_textsize">16sp</dimen>
+    <dimen name="mystar_line_margin_left">84dp</dimen>
+    <dimen name="mystar_listitem_time_icon_margin_right">4dp</dimen>
+    <dimen name="mystar_faca_time_margin_top">10dp</dimen>
+    <dimen name="mystar_listitem_time_textsize">12sp</dimen>
+    <dimen name="mystar_listitem_time_margin_right">12dp</dimen>
+    <dimen name="mystar_tabitem_height">66dp</dimen>
+    
+    <!-- 我的评论 -->
+    <dimen name="mycomments_listitem_nickname_textsize">14sp</dimen>
+    <dimen name="mycomments_listitem_time_textsize">8sp</dimen>
+    <dimen name="mycomments_listitem_content_textsize">16sp</dimen>
+    <dimen name="mycomments_listitem_view_tag_textsize">8sp</dimen>
+    <dimen name="mycomments_listitem_line_margin_top">8dp</dimen>
+    <dimen name="mycomments_listitem_margin_left_right">24dp</dimen>
+    <dimen name="mycomments_listitem_view_title_margin_top_left_rifht">12dp</dimen>
+    <dimen name="mycomments_listitem_view_tag_margin_top">8dp</dimen>
+    <dimen name="mycomments_listitem_content_margin_top_bottom">4dp</dimen>
+    <dimen name="mycomments_listitem_time_margin_left">8dp</dimen>
+    
+    <!-- 礼包 -->
+    <dimen name="gift_send_btn_textsize">12sp</dimen>
+    <dimen name="gift_dialog_width">128dp</dimen>
+    <dimen name="gift_dialog_height">86dp</dimen>
+    <dimen name="dialog_btn_width">120dp</dimen>
+    <dimen name="dialog_btn_height">45dp</dimen>
+
+    <!-- slidemenu参数 -->
+    <item name="menuFromDegrees" format="float" type="dimen">180.0</item>
+    <item name="menuToDegrees" format="float" type="dimen">360.0</item>
+
+    <dimen name="menuChildSize">33dp</dimen>
+
+    <!-- 表情 -->
+    <dimen name="expression_banner_height">124dp</dimen>
+    <dimen name="star_margin">2dp</dimen>
+    <dimen name="expression_button_width">344dp</dimen>
+    <dimen name="expression_button_height">42dp</dimen>
+    <dimen name="expression_tab_item_height">38dp</dimen>
+    <dimen name="expression_item_line_width">180dp</dimen>
+    <dimen name="expression_margin_big">30dp</dimen>
+    <dimen name="face_gridview_listitem_width_height">94dp</dimen>
+<!--     <dimen name="expression_viewpager_height">289dp</dimen> -->
+    <dimen name="expression_ad_listview_height">122dp</dimen>
+    <dimen name="expression_dialog_width">320dp</dimen>
+    <dimen name="expression_dialog_height">238dp</dimen>
+    <dimen name="expression_dialog_height1">306dp</dimen>
+    <dimen name="expression_dialog_height2">262dp</dimen>
+    <dimen name="expression_dialog_margin">-10dp</dimen>
+    <dimen name="expression_dialog_image_width_height">188dp</dimen>
+    <dimen name="face_download_dialog_height">300dp</dimen>
+    
+    <dimen name="expression_viewpager_height1">100dp</dimen>
+    <dimen name="expression_viewpager_height2">200dp</dimen>
+    <dimen name="expression_viewpager_height3">300dp</dimen>
+
+    <!-- 游戏 -->
+    <dimen name="game_banner_height">185dp</dimen>
+    <dimen name="game_button_width">344dp</dimen>
+    <dimen name="game_button_height">40dp</dimen>
+    <dimen name="game_margin_big">30dp</dimen>
+    <dimen name="game_icon_width">50dp</dimen>
+    <dimen name="game_icon_height">50dp</dimen>
+    <dimen name="detail_viewpager_width">242dp</dimen>
+    <dimen name="detail_viewpager_height">235dp</dimen>
+
+    <!-- 新闻 -->
+    <dimen name="news_margin_big">20dp</dimen>
+    <dimen name="news_comment_edit_Layout_height">32dp</dimen>
+    <dimen name="news_comment_edit_margin">8dp</dimen>
+    <dimen name="news_comment_edit_textsize">14sp</dimen>
+    <dimen name="news_comment_send_textsize">12sp</dimen>
+    <dimen name="news_comment_title_size">14sp</dimen>
+    <dimen name="news_comment_title_margin">18dp</dimen>
+    <dimen name="news_comment_title_text_margin">6dp</dimen>
+
+    <!-- 视频 -->
+    <dimen name="video_title_size">20sp</dimen>
+    <dimen name="video_title_margin">50dp</dimen>
+    <dimen name="video_content_height">214dp</dimen>
+    <dimen name="video_content_wight">322dp</dimen>
+    
+    <!-- 用户资料 -->
+    <dimen name="userdata_item1_height">94dp</dimen>
+    <dimen name="userdata_avatar">56dp</dimen>
+    <dimen name="userdata_item2_height">66dp</dimen>
+    <dimen name="chat_avatar">48dp</dimen>
+    
+    <!-- 设置 -->
+    <dimen name="setting_dialog_button_height">58dp</dimen>
+    <dimen name="setting_dialog_height">150dp</dimen>
+    
+    <!-- 私信 -->
+    <dimen name="chat_time_margin">64dp</dimen>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <color name="lf_bg_color">#200d43</color>
+    <color name="ad_bg">#e9e9e9</color>
+    <color name="cancel_bg">#d3d3d3</color>
+    <color name="line_bg">#dddddd</color>
+    <color name="textColor_dark">#737373</color>
+    <color name="textColor_light">#9b9b9b</color>
+    <color name="ad_textColor">#3e3a39</color>
+    <color name="ad_frame_bg">#cacaca</color>
+    <color name="ad_layout_bg">#eaeaea</color>
+    
+    <color name="app_textColor_light">#898989</color>
+    
+    <color name="comment_addfriend_textColor">#727171</color>
+    <color name="comment_content_textColor">#3e3a39</color>
+    <color name="comment_light_textColor">#adadad</color>
+    <color name="comment_send_bg_color">#adadad</color>
+    
+    
+    
+    <color name="share_popwindow_bg">#e5e5e5</color>
+    <color name="share_textColor">#202020</color>
+    <color name="gif_dialog_bg">#90000000</color>
+    <color name="search_layout_bg">#eeeeee</color>
+    <color name="dialog_btn_bg_progress">#eaeaea</color>
+    <color name="head_layout_bg_color">#bf0d52</color>
+    
+    <!-- 主页 -->
+    <color name="main_content_bg">#e2e2e2</color>
+    <color name="main_adapter_item_bg_color">#55000000</color>
+    
+    <!-- 左侧见面 -->
+<!--     <color name="leftmenu_mb_color">#e0355f</color> -->
+    <color name="leftmenu_mb_color1">#a7712a</color>
+    <color name="leftmenu_bottom_bg_color">#e13962</color>
+    
+    <!-- 登录 -->
+    <color name="title_color">#171717</color>
+    <color name="login_forgot_pwd_textcolor">#795aae</color>
+    <color name="login_head_line_color">#d5d5d5</color>
+    <color name="login_btn_bg_color">#7a5aaf</color>
+    
+    <color name="edittext_bg_color">#dbdbdb</color>
+    <color name="thirdparty_textcolor">#939393</color>  
+    <color name="edittext_hint_textColor">#898989</color>
+    <color name="agreement_textColor">#a1a1a1</color>
+    <!-- 个人信息 -->
+    <color name="information_textColor_dark">#171717</color>
+    <color name="information_line_bg">#d8d8d8</color>
+    <color name="information_item_bg_color">#f1f1f1</color>
+    
+    <color name="info_head_bg_color">#ececec</color>
+    <color name="info_head_nickname_textColor">#555555</color>
+    <color name="info_head_location_textColor">#999999</color>
+    
+    <!-- 财富中心 -->
+    <color name="wealthcenter_top_textcolor">#ffc600</color>
+    <color name="wealthcenter_content_line_color">#dbdbdb</color>
+    <color name="wealthcenter_content_title_color">#3e3a39</color>
+    <color name="wealthcenter_textColor">#b1afb0</color>
+    
+    <!-- 我的星迹 -->
+    <color name="mystar_content_address_textcolor">#848484</color>
+    <color name="mystar_listitem_time_color">#a6a6a6</color>
+    <color name="mystar_item_divide_color">#55ffffff</color>
+    
+    <!-- 我的评论 -->
+    <color name="mycomments_listitem_nickname_text_color">#474747</color>
+    <color name="mycomments_listitem_time_text_color">#7f7f7f</color>
+    <color name="mycomments_listitem_view_bg_color">#d8d8d8</color>
+    <color name="mycomments_listitem_view_title_color">#666666</color>
+    
+    <!-- 我要送ta -->
+    <color name="friend_gift_listview_driver">#c3c3c3</color>
+
+    <!-- 表情 -->
+    <color name="black">#000000</color>
+    <color name="expression_textcolor">#717171</color>
+
+    <!-- 新闻 -->
+    <color name="news_bg">#e9e9e9</color>
+    <color name="reply_line_color">#e1e1e1</color>
+    <color name="comment_edittext_color">#a9a9a9</color>
+    
+    <!-- 视频  -->
+	<color name="video_textColor_light">#b5b5b6</color>
+	
+	<!-- 用户资料 -->
+	<color name="userdata_bg">#ececec</color>
+	<color name="divide_line_color">#c0c0c0</color>
+	<color name="chat_bg">#efe5fe</color>
+	<color name="dialog_cancel_bg">#d5d5d5</color>
+	<color name="pink_text">#ff75b3</color>
+	
+	<!-- 礼包 -->
+	<color name="send_gift_bg">#ffd8d8</color>
+	<color name="received_gift_nickname">#ffb1c4</color>
+	<color name="received_gift_amount">#fffd44</color>
+	
+	<!-- 搜索 -->
+	<color name="search_color">#f13c69</color>
+	
+</resources>

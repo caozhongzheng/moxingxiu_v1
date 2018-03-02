@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/comment_shape"
+    	android:paddingBottom="@dimen/margin_20"
+    	android:orientation="vertical"
+    	android:gravity="center_horizontal" >
+    	 
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobi_shortage"
+			android:textColor="@color/title_color"
+			android:layout_marginTop="@dimen/margin_20" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/go_charge"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/leftmenu_bottom_bg_color" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30" >
+	        <FrameLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+		
+		        <EditText
+		            android:id="@+id/charge_amount"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@android:color/transparent"
+		            android:hint="@string/charge_amount_hint"
+		            android:inputType="number"
+		            android:textColorHint="@color/app_textColor_light"
+		            android:textSize="@dimen/edittext_hint_textsize"
+		            android:layout_gravity="center_horizontal" />
+		
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="bottom"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/charge_bg" />
+		    </FrameLayout>
+		    
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/margin_bigger"
+	            android:text="@string/mobi"
+	            android:textColor="@color/title_color"
+	            android:textSize="@dimen/title_size" />
+        </LinearLayout>
+      
+	    <View
+	    	android:layout_width="match_parent"
+	        android:layout_height="@dimen/dividing_line"
+	        android:layout_marginTop="@dimen/margin_30"
+	        android:background="@color/login_head_line_color" />
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_20"
+	        android:paddingLeft="@dimen/margin_20"
+	        android:paddingRight="@dimen/margin_20" >
+	        <TextView 
+	            android:id="@+id/dialog_charge_cancel"
+	            android:layout_width="@dimen/dialog_btn_width"
+	            android:layout_height="@dimen/dialog_btn_height"
+	            android:gravity="center"
+	            android:background="@drawable/dialog_cancel_bg"
+	            android:text="@string/cancel"
+	            android:textSize="@dimen/title_size"
+	            android:textColor="@android:color/white"
+	            android:clickable="true"
+	            android:onClick="onClick" />
+	        <TextView
+	            android:id="@+id/dialog_charge_sure"
+	            android:layout_width="@dimen/dialog_btn_width"
+	            android:layout_height="@dimen/dialog_btn_height"
+	            android:gravity="center"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/dialog_sure_bg"
+	            android:text="@string/sure"
+	            android:textSize="@dimen/title_size"
+	             android:textColor="@android:color/white"
+	            android:clickable="true"
+	            android:onClick="onClick" />
+	    </RelativeLayout>
+    </LinearLayout>  
+	
+</LinearLayout>

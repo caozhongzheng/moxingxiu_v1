@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="@dimen/setting_dialog_height"
+        android:background="@drawable/comment_shape"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_reply_tip"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/title_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wealthcenter_content_line_height"
+            android:background="@color/login_head_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_dialog_button_height"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/deleteReply_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/cancel"
+                android:background="@drawable/dialog_btn_bg_left"
+                android:textColor="@color/app_textColor_light"
+                android:textSize="@dimen/title_size" />
+
+            <View
+                android:layout_width="@dimen/wealthcenter_content_line_height"
+                android:layout_height="match_parent"
+                android:background="@color/login_head_line_color" />
+
+            <TextView
+                android:id="@+id/deleteReply_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:background="@drawable/dialog_btn_bg_right"
+                android:text="@string/sure"
+                android:textColor="@color/head_layout_bg_color"
+                android:textSize="@dimen/title_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/information_head_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/info_head_bg_color" >
+    
+    <ImageView
+        android:id="@+id/activity_left"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/information_left"
+	    android:onClick="onClick" />
+    
+    <RelativeLayout 
+        android:id="@+id/ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_normal" >
+        <LinearLayout 
+            android:id="@+id/dot_ll"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true" >
+	        <ImageView 
+	            android:id="@+id/dot1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/information_dot_empty" />
+	        <ImageView 
+	            android:id="@+id/dot2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/information_dot_filled" />
+	        <ImageView 
+	            android:id="@+id/dot3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/information_dot_empty" />
+    	</LinearLayout>
+    	
+        <LinearLayout
+            android:id="@+id/friend_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/mystar_textview_bg"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/dot_ll"
+            android:onClick="onClick"
+            android:visibility="gone" >
+	        <TextView 
+	            android:id="@+id/my_friend"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0"
+	            android:textColor="@android:color/white"
+	            android:textSize="@dimen/textSize_16" />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="好友"
+	            android:textColor="@android:color/white" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/message_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/mystar_textview_bg"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/dot_ll"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:visibility="gone" >
+	        <TextView 
+	            android:id="@+id/my_message"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0"
+	            android:textColor="@android:color/white" />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="私信"
+	            android:textColor="@android:color/white" />
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/dot_ll" >
+	        <RelativeLayout 
+	            android:id="@+id/center_ll"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:layout_marginLeft="@dimen/margin_20"
+			    android:layout_marginRight="@dimen/margin_20" >
+				<FrameLayout
+			        android:id="@+id/head_avatar_layout"
+			        android:layout_width="@dimen/information_head_avatar"
+			        android:layout_height="@dimen/information_head_avatar"
+			        android:layout_centerHorizontal="true" >
+			        <ImageView
+			            android:id="@+id/head_avatar"
+			            android:layout_width="@dimen/information_head_avatar"
+			            android:layout_height="@dimen/information_head_avatar"
+			            android:src="@drawable/leftmenu_default_icon"
+			            android:scaleType="fitXY" />
+			        <ImageView
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:background="@drawable/information_head_avatar_bg"
+			            android:scaleType="fitXY" />
+			    </FrameLayout>
+			    
+				<TextView 
+				    android:id="@+id/head_location"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="@dimen/margin_small"
+				    android:layout_centerHorizontal="true"
+				    android:text="南京市"
+				    android:textColor="@color/info_head_location_textColor"
+				    android:layout_below="@id/head_avatar_layout" />
+			</RelativeLayout>
+		    
+			<TextView 
+			    android:id="@+id/head_nickname"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:text="节奏"
+			    android:textColor="@color/info_head_nickname_textColor"
+			    android:textSize="@dimen/textSize_16"
+			    android:layout_toLeftOf="@id/center_ll" />
+			
+			<ImageView 
+			    android:id="@+id/head_gender"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:layout_toRightOf="@id/center_ll" />
+			
+		</RelativeLayout>	
+    </RelativeLayout>
+    
+	<ImageView 
+	    android:id="@+id/activity_right"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/information_right"
+	    android:onClick="onClick" />
+	
+</LinearLayout>

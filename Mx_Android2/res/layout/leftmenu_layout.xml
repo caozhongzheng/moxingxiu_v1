@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/nologin_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/leftmenu_login"
+                android:layout_width="@dimen/userdata_item2_height"
+                android:layout_height="@dimen/userdata_item2_height"
+                android:layout_marginTop="@dimen/leftmenu_no_login"
+                android:background="@drawable/leftmenu_default_icon"
+                android:onClick="onClick"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/leftmenu_no_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/leftmenu_no_login"
+                android:background="@drawable/leftmenu_no_login_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/leftmenu_no_login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/leftmenu_timing_tip1_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_success_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <FrameLayout
+                android:layout_width="@dimen/userdata_item2_height"
+                android:layout_height="@dimen/userdata_item2_height"
+                android:background="@drawable/leftmenu_icon_bg" >
+
+                <ImageView
+                    android:id="@+id/leftmenu_icon"
+                    android:layout_width="@dimen/userdata_item2_height"
+                    android:layout_height="@dimen/userdata_item2_height"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/leftmenu_default_icon" />
+
+                <ImageView
+                    android:layout_width="@dimen/userdata_item2_height"
+                    android:layout_height="@dimen/userdata_item2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/leftmenu_icon_bg" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/leftmenu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/leftmenu_name_margin_top"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/leftmenu_name_textsize" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/leftmenu_mb_margin_top"
+                android:layout_marginTop="@dimen/leftmenu_mb_margin_top" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/leftmenu_mg_icon_drawablepadding"
+                    android:src="@drawable/leftmenu_mb_icon" />
+
+                <TextView
+                    android:id="@+id/leftmenu_mb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/leftmenu_mb_color1"
+                    android:textSize="@dimen/leftmenu_name_textsize" />
+            </RelativeLayout>
+
+            <!--
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/leftmenu_comments_favorite_margin_topandbottom"
+                android:background="@drawable/leftmenu_top_comment_like"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftmenu_top_comment_like"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/mycomments_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/leftmenu_comments_favorite_item_margin"
+                    android:background="@drawable/leftmenu_c_l"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/leftmenu_comments_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/leftmenu_name_textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/leftmenu_comments"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/leftmenu_comments_favorite_item_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mylikes_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftmenu_c_l"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/leftmenu_favorite_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/leftmenu_name_textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/leftmenu_favorite"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/leftmenu_comments_favorite_item_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/leftmenu_fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/leftmenu_timing_margin_topandbottom"
+        android:layout_marginTop="@dimen/leftmenu_timing_margin_topandbottom"
+        android:background="@drawable/leftmenu_timing_bg"
+        android:onClick="onClick" >
+
+        <TextView
+            android:id="@+id/fingerprint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/leftmenu_timing_margin_topandbotto2"
+            android:drawableLeft="@drawable/leftmenu_timing_icon"
+            android:drawablePadding="@dimen/margin_3"
+            android:text="+30"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/leftmenu_fingerprint_cbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/leftmenu_fingerprint_margin_left"
+            android:background="@drawable/leftmenu_fingerprint_1"
+            android:button="@null"
+            android:clickable="false" />
+        
+        <TextView 
+            android:id="@+id/fingerprint_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/leftmenu_timing_icon"
+            android:drawablePadding="@dimen/margin_3"
+            android:text="@string/already_signin"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/leftmenu_mystar"
+            style="@style/leftmenu_bottom_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/leftmenu_timing_margin_topandbottom"
+            android:layout_marginTop="@dimen/leftmenu_timing_margin_topandbottom"
+            android:background="@drawable/leftmenu_mystar"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/leftmenu_bottom_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leftmenu_mystar" />
+
+            <TextView
+                style="@style/leftmenu_bottom_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leftmenu_mystar_subtitle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/leftmenu_wealthcenter"
+            style="@style/leftmenu_bottom_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/leftmenu_timing_margin_topandbottom"
+            android:layout_marginTop="@dimen/leftmenu_timing_margin_topandbottom"
+            android:background="@drawable/leftmenu_wealthcenter"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/leftmenu_bottom_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leftmenu_usercenter" />
+
+            <TextView
+                style="@style/leftmenu_bottom_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leftmenu_usercenter_subtitle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/leftmenu_setting"
+            style="@style/leftmenu_bottom_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/leftmenu_timing_margin_topandbottom"
+            android:background="@drawable/leftmenu_setting"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/setting_tv"
+	                style="@style/leftmenu_bottom_style"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/leftmenu_setting" />
+	            <ImageView 
+	                android:id="@+id/update_prompt"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/setting_tv"
+	                android:layout_alignTop="@id/setting_tv"
+	                android:layout_marginLeft="@dimen/margin_3"
+	                android:layout_marginTop="@dimen/margin_3"
+	                android:src="@drawable/update_prompt"
+	                android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/leftmenu_bottom_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leftmenu_setting_subtitle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

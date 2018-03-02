@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moinapp.wuliao.ui.view.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/head_layout_bg_color" >
+	    
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back_news" />
+	
+	    <TextView
+	        android:id="@+id/title_center"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="@android:color/white"
+	        android:textSize="@dimen/title_size" />
+	
+	    <ImageView
+	        android:id="@+id/title_right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_share" />
+	</RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/video_title_margin"
+                android:layout_marginRight="@dimen/video_title_margin"
+                android:layout_marginTop="@dimen/margin_20"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/video_title_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/video_title_margin"
+                android:layout_marginRight="@dimen/video_title_margin"
+                android:layout_marginTop="@dimen/margin_big" >
+
+                <TextView
+                    android:id="@+id/news_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_11" />
+
+                <TextView
+                    android:id="@+id/news_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/textSize_11" />
+            </RelativeLayout>
+
+            <com.moinapp.wuliao.ui.view.Mx_WebView
+                android:id="@+id/news_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_normal"
+                android:paddingLeft="@dimen/news_margin_big"
+                android:paddingRight="@dimen/news_margin_big"
+                android:paddingTop="@dimen/news_margin_big" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/collect_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/news_checkbox_collect_bg"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/news_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout 
+                android:id="@+id/comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/news_comment_title_margin"
+	                android:layout_marginRight="@dimen/news_comment_title_margin"
+	                android:layout_marginBottom="@dimen/news_comment_title_text_margin"
+	                android:orientation="horizontal" >
+	
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/comment_icon" />
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/news_comment_title"
+	                    android:textColor="@android:color/black"
+	                    android:layout_marginLeft="@dimen/news_comment_title_text_margin"
+	                    android:textSize="@dimen/news_comment_title_size" />
+	            </LinearLayout>
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dividing_line"
+	                android:layout_marginLeft="@dimen/news_comment_title_margin"
+	                android:layout_marginRight="@dimen/news_comment_title_margin"
+	                android:background="@color/line_bg" />
+	
+	            <com.moinapp.wuliao.ui.view.MyListView
+	                android:id="@+id/news_lv"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:divider="@null"
+	                android:listSelector="@android:color/transparent" />
+	
+	            <ImageView
+	                android:id="@+id/load_more_comment"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="@dimen/margin_bigger"
+	                android:layout_marginTop="@dimen/margin_bigger"
+	                android:clickable="true"
+	                android:onClick="onClick"
+	                android:src="@drawable/load_more_comment" />
+	        </LinearLayout>    
+            
+            <include layout="@layout/ad_layout" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:id="@+id/to_editText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/news_comment_edit_Layout_height"
+            android:layout_margin="@dimen/news_comment_edit_margin"
+            android:background="@drawable/comment_edittext_bg_line"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/news_comment_edit_margin"
+            android:singleLine="true"
+            android:text="@string/news_comment_edit_tip"
+            android:textColor="@color/comment_edittext_color"
+            android:textSize="@dimen/news_comment_edit_textsize" />
+
+        <EditText
+            android:id="@+id/comment_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/news_comment_edit_margin"
+            android:background="@drawable/comment_edittext_bg_line"
+            android:clickable="true"
+            android:gravity="top"
+            android:hint="@string/news_comment_edit_tip"
+            android:minLines="4"
+            android:onClick="onClick"
+            android:padding="@dimen/news_comment_edit_margin"
+            android:textColor="@color/comment_edittext_color"
+            android:textColorHint="@color/comment_edittext_color"
+            android:textSize="@dimen/news_comment_edit_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/news_comment_edit_margin"
+            android:background="@drawable/comment_send_bg_gray"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/news_comment_send"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/news_comment_send_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.moinapp.wuliao.ui.view.ResizeLayout>

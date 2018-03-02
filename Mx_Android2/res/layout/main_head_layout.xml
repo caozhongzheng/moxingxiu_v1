@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/head_layout_bg_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/left_user_icon"
+        android:layout_width="@dimen/head_menu_left_bg_w_h"
+        android:layout_height="@dimen/head_menu_left_bg_w_h"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal" >
+
+        <ImageView
+            android:id="@+id/title_left"
+            android:layout_width="@dimen/head_menu_left_bg_w_h"
+            android:layout_height="@dimen/head_menu_left_bg_w_h"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:layout_width="@dimen/head_menu_left_bg_w_h"
+            android:layout_height="@dimen/head_menu_left_bg_w_h"
+            android:scaleType="fitXY"
+            android:src="@drawable/head_menu_left_bg" />
+    </FrameLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick"
+        android:paddingRight="@dimen/margin_normal"
+        android:src="@drawable/search"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/title_right_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_toRightOf="@id/left_user_icon"
+        android:layout_toLeftOf="@id/loading_imageview"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/search_edittext_margin_right" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/search_edittext_icon_margin_right"
+                    android:layout_marginRight="@dimen/search_edittext_icon_margin_right"
+                    android:src="@drawable/search_icon" />
+
+                <TextView
+                    android:id="@+id/search_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:text="@string/search_tip"
+                    android:textColor="@color/search_color"
+                    android:textSize="@dimen/search_edittext_textsize" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_line" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+   	android:focusable="true"  
+   	android:focusableInTouchMode="true" >
+    
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/head_layout_bg_color" >
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back" />
+	    <TextView
+	        android:id="@+id/title_center"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/chat"
+	        android:textColor="@android:color/white"
+	        android:textSize="@dimen/title_size" />
+	    <ImageView
+	        android:id="@+id/title_right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:paddingRight="@dimen/margin_normal"
+	        android:onClick="onClick"
+	        android:src="@drawable/chat_clear" />
+	</RelativeLayout>
+	
+	<com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chat_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/margin_normal"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        ptr:ptrAnimationStyle="flip"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true"
+        android:background="@color/userdata_bg" />
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    android:paddingTop="@dimen/margin_normal"
+	    android:paddingBottom="@dimen/margin_normal"
+	    android:paddingLeft="@dimen/margin_big"
+	    android:paddingRight="@dimen/margin_big"
+	    android:gravity="center_vertical"
+	    android:background="@android:color/white" >
+	    
+	    <EditText 
+	        android:id="@+id/chat_content"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/chat_bg" />
+	    
+	    <TextView 
+	        android:id="@+id/chat_send"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/margin_small"
+	        android:layout_marginLeft="@dimen/margin_normal"
+	        android:background="@drawable/btn_bg_filled"
+	        android:text="@string/chat_send"
+	        android:textColor="@android:color/white"
+	        android:onClick="onClick"
+	        android:clickable="true" />
+	</LinearLayout>
+    
+</LinearLayout>

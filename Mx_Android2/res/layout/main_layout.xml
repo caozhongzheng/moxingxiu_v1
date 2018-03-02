@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white" >
+
+            <com.moinapp.wuliao.ui.view.Mx_ViewPager
+                android:id="@+id/mainlist_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/menuaddbg_o"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/menuaddbg" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/bottom_menu_margin_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/order_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_l_btn"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/main_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bottom_menu_margin_leftandright"
+                android:layout_marginRight="@dimen/bottom_menu_margin_leftandright"
+                android:background="@drawable/bottom_c_btn"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/face_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_r_btn"
+                android:button="@null" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

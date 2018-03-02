@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/regist_bg1_wight"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/regist_edittext_bg1"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regist_nickname"
+                    android:textColor="@color/edittext_hint_textColor" />
+                <EditText 
+                    android:id="@+id/nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                	android:background="@null" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="@dimen/regist_bg2_wight"
+                android:layout_height="wrap_content"
+                android:background="@drawable/regist_edittext_bg2"
+                android:gravity="center" >
+                <ImageView 
+                    android:id="@+id/nickname_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/regist_ok"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/regist_gender"
+                android:textColor="@color/edittext_hint_textColor" />
+            <RadioGroup 
+                android:id="@+id/regist_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RadioButton 
+                    android:id="@+id/gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:text="@string/regist_gender_male"
+                    android:textColor="@android:color/black"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radiobutton_gender_bg"
+                    android:drawablePadding="@dimen/margin_small" />
+                <RadioButton 
+                    android:id="@+id/gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:text="@string/regist_gender_female"
+                    android:textColor="@android:color/black"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radiobutton_gender_bg"
+                    android:drawablePadding="@dimen/margin_small" />
+                <RadioButton 
+                    android:id="@+id/gender_unknow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:text="@string/regist_gender_unknow"
+                    android:textColor="@android:color/black"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radiobutton_gender_bg"
+                    android:drawablePadding="@dimen/margin_small"
+                    android:checked="true" />
+            </RadioGroup>
+        </LinearLayout>
+        
+	    <TextView
+	        android:id="@+id/regist_submit"
+	        android:layout_marginTop="@dimen/margin_40"
+	        android:text="@string/regist_sure"
+	        style="@style/btn_textview_style" />
+    </LinearLayout>
+
+</LinearLayout>

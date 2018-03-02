@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/ad_margin"
+    android:layout_marginTop="@dimen/margin_20"
+    android:background="@color/ad_bg" >
+    
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+	    
+	    <ImageView
+	        android:id="@+id/ad1_iv"
+	        android:layout_width="@dimen/ad_width"
+	        android:layout_height="@dimen/ad_height"
+	        android:scaleType="fitXY" />
+	    
+	    <TextView 
+	        android:id="@+id/ad1_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_small"
+	        android:text="黄晓明表情 Q版"
+	        android:textSize="@dimen/textSize_11"
+	        android:textColor="@color/ad_textColor" />
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_small"
+	        android:gravity="center_vertical" >
+	        
+	        <ImageView 
+	            android:id="@+id/ad1_star1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad1_star2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad1_star3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad1_star4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad1_star5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty" />
+	        
+	        <TextView
+	            android:id="@+id/ad1_download_number" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/margin_normal"
+	            android:textSize="@dimen/textSize_11"
+	            android:textColor="@color/textColor_light" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/download_number"
+	            android:textSize="@dimen/textSize_11"
+	            android:textColor="@color/textColor_light" />
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_marginLeft="@dimen/ad_margin"
+	    android:layout_marginRight="@dimen/ad_margin"
+	    android:orientation="vertical" >
+	    
+	    <ImageView 
+	        android:id="@+id/ad2_iv"
+	        android:layout_width="@dimen/ad_width"
+	        android:layout_height="@dimen/ad_height"
+	        android:scaleType="fitXY" />
+	    
+	    <TextView 
+	        android:id="@+id/ad2_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_small"
+	        android:text="黄晓明表情 Q版"
+	        android:textSize="@dimen/textSize_11"
+	        android:textColor="@color/ad_textColor" />
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_small"
+	        android:gravity="center_vertical" >
+	        
+	        <ImageView 
+	            android:id="@+id/ad2_star1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad2_star2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad2_star3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad2_star4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/ad2_star5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty" />
+	        
+	        <TextView
+	            android:id="@+id/ad2_download_number" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/margin_normal"
+	            android:textSize="@dimen/textSize_11"
+	            android:textColor="@color/textColor_light" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/download_number"
+	            android:textSize="@dimen/textSize_11"
+	            android:textColor="@color/textColor_light" />
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+	    
+	    <ImageView 
+	        android:id="@+id/ad3_iv"
+	        android:layout_width="@dimen/ad_width"
+	        android:layout_height="@dimen/ad_height"
+	        android:scaleType="fitXY" />
+	    
+	    <TextView 
+	        android:id="@+id/ad3_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_small"
+	        android:text="黄晓明表情 Q版"
+	        android:textSize="@dimen/textSize_11"
+	        android:textColor="@color/ad_textColor" />
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_small"
+	        android:gravity="center_vertical" >
+	        
+	        <ImageView 
+	            android:id="@+id/star1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/star2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/star3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/star4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty"
+	            android:layout_marginRight="@dimen/star_margin" />
+	        <ImageView 
+	            android:id="@+id/star5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/star_empty" />
+	        
+	        <TextView
+	            android:id="@+id/ad3_download_number" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/margin_normal"
+	            android:textSize="@dimen/textSize_11"
+	            android:textColor="@color/textColor_light" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/download_number"
+	            android:textSize="@dimen/textSize_11"
+	            android:textColor="@color/textColor_light" />
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

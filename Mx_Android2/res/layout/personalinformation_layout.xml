@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userdata_bg"
+    android:orientation="vertical" >
+
+    <com.moinapp.wuliao.ui.view.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/avatar_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/i_avatar"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/avatar_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:src="@drawable/arrow" />
+
+                <FrameLayout
+                    android:id="@+id/user_avatar_layout"
+                    android:layout_width="@dimen/comment_avatar"
+                    android:layout_height="@dimen/comment_avatar"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/avatar_arrow" >
+
+                    <ImageView
+                        android:id="@+id/user_avatar"
+                        android:layout_width="@dimen/comment_avatar"
+                        android:layout_height="@dimen/comment_avatar"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/information_icon_bg"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividing_line"
+                android:background="@color/login_head_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/nickname_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_nickname"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/nickname_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/nickname_arrow"
+                    android:textColor="@color/app_textColor_light"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wealthcenter_content_line_height"
+                android:background="@color/login_head_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/location_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_location"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/location_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/location_arrow"
+                    android:textColor="@color/app_textColor_light"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wealthcenter_content_line_height"
+                android:background="@color/login_head_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/gender_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_gender"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/gender_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/gender_arrow"
+                    android:textColor="@color/app_textColor_light"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wealthcenter_content_line_height"
+                android:background="@color/login_head_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/idol_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/idol_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_idol"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idol_title"
+                    android:layout_marginTop="@dimen/item_margin" >
+
+                    <TextView
+                        android:id="@+id/idol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_textColor_light"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <ImageView
+                        android:id="@+id/idol_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:paddingLeft="@dimen/arrow_padding"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+            
+            
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40" />
+
+            <RelativeLayout
+                android:id="@+id/cellphone_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_cellphone"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/cellphone_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:paddingRight="@dimen/arrow_padding"
+                    android:src="@drawable/arrow"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/cellphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/cellphone_arrow"
+                    android:textColor="@color/app_textColor_light"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wealthcenter_content_line_height"
+                android:background="@color/login_head_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/email_item"
+                style="@style/information_item_noclick_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/email_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/email_arrow"
+                    android:textColor="@color/app_textColor_light"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wealthcenter_content_line_height"
+                android:background="@color/information_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/password_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_password"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/password_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/password_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/password_arrow"
+                    android:text="修改"
+                    android:textColor="@color/app_textColor_light"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wealthcenter_content_line_height"
+                android:background="@color/information_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/login_out_item"
+                style="@style/information_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_out"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/login_out_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/arrow_padding"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/login_out_arrow"
+                    android:textColor="@color/app_textColor_light"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividing_line"
+                android:background="@color/login_head_line_color"
+                android:layout_marginBottom="@dimen/margin_big" />
+        </LinearLayout>
+    </com.moinapp.wuliao.ui.view.BounceScrollView>
+
+</LinearLayout>

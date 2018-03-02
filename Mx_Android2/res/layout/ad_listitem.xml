@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/ad_frame"
+    android:padding="3dp" >
+
+
+    <ImageView
+        android:id="@+id/ad1_iv"
+        android:layout_width="@dimen/ad_width"
+        android:layout_height="@dimen/ad_height"
+        android:background="@android:color/white"
+        android:scaleType="fitXY" />
+
+<!--         <TextView -->
+<!--             android:id="@+id/ad1_title" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="@dimen/margin_small" -->
+<!--             android:text="黄晓明表情 Q版" -->
+<!--             android:textColor="@color/ad_textColor" -->
+<!--             android:textSize="@dimen/textSize_11" /> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:gravity="center_vertical" > -->
+
+<!--             <RatingBar -->
+<!--                 android:id="@+id/room_ratingbar" -->
+<!--                 style="@style/roomRatingBar" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:isIndicator="true" -->
+<!--                 android:numStars="5" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/ad1_download_number" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="@dimen/margin_normal" -->
+<!--                 android:textColor="@color/textColor_light" -->
+<!--                 android:textSize="@dimen/textSize_10" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:text="@string/download_number" -->
+<!--                 android:textColor="@color/textColor_light" -->
+<!--                 android:textSize="@dimen/textSize_10" /> -->
+<!--         </LinearLayout> -->
+
+</RelativeLayout>

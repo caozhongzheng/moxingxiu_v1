@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userdata_bg"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/head_layout_bg_color" >
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textSize="@dimen/title_size"
+	        android:text="@string/mymessages_title"
+	        android:textColor="@android:color/white" />
+	    <ImageView 
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:layout_marginRight="@dimen/margin_big"
+            android:src="@drawable/send_message" />
+	</RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView 
+            android:id="@+id/message_received"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/expression_tab_item_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:text="@string/message_received"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/head_layout_bg_color" />
+        
+        <View 
+            android:layout_width="@dimen/dividing_line"
+            android:layout_height="match_parent"
+            android:background="@color/line_bg" />
+        
+        <TextView  
+            android:id="@+id/message_sent"  
+            android:layout_width="0dp"  
+            android:layout_height="@dimen/expression_tab_item_height" 
+            android:layout_weight="1"
+            android:gravity="center"  
+            android:onClick="onClick"
+           	android:clickable="true"
+            android:text="@string/message_sent"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/title_color" /> 
+    </LinearLayout>
+	<ImageView 
+	    android:id="@+id/message_tab_cursor"
+	    android:layout_width="@dimen/expression_item_line_width"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/cursor_pink" />
+    <View 
+	    android:layout_height="@dimen/dividing_line"
+	    android:layout_width="match_parent"
+	    android:background="@color/line_bg" />    
+	    
+    <com.moinapp.wuliao.ui.view.Mx_ViewPager
+        android:id="@+id/message_viewpager"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

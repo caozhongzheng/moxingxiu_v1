@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="@dimen/dialog_width"
+    	android:layout_height="@dimen/dialog_height"
+    	android:background="@drawable/comment_shape"
+    	android:orientation="vertical" >
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dialog_title_height"
+	        android:text="@string/forget_password"
+	        android:background="@drawable/forgot_pwd_shape"
+	        android:textColor="@android:color/white"
+	        android:textSize="@dimen/title_size"
+	        android:gravity="center" />
+    
+	   <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="@dimen/dialog_title_height"
+	        android:paddingBottom="@dimen/dialog_title_height" >
+	        <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	            <ImageView 
+		            android:id="@+id/retrieve_by_mobile"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/retrieve_mobile" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+		        <ImageView 
+		            android:id="@+id/retrieve_by_email"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/retrieve_email" />
+		    </LinearLayout>
+    	</LinearLayout>
+    
+    </LinearLayout>
+	
+</LinearLayout>

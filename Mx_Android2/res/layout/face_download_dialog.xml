@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/face_download_dialog_top" />
+
+    <RadioGroup
+        android:id="@+id/face_download_dialog_rgp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/face_download_dialog_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:background="@drawable/face_download_dialog_weixin_rbtn_bg"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/face_download_dialog_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/face_download_dialog_qq_rbtn_bg"
+            android:button="@null" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/face_download_dialog_height"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/face_download_dialog_scrollview1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/face_download_dialog_weixin" />
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/face_download_dialog_scrollview2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/face_download_dialog_qq" />
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/face_download_dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/face_download_dialog_bottom" />
+
+</LinearLayout>

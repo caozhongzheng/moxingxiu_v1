@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tx1" type="integer">220</item>
+    <item name="ty1" type="integer">48</item>
+    <item name="tx2" type="integer">96</item>
+    <item name="ty2" type="integer">152</item>
+    <item name="tx3" type="integer">-92</item>
+    <item name="ty3" type="integer">156</item>
+    <item name="tx4" type="integer">-220</item>
+    <item name="ty4" type="integer">48</item>
+
+</resources>

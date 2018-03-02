@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/userdata_bg" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@android:color/white"
+	    android:orientation="vertical" >
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textSize="@dimen/title_size"
+	        android:text="@string/gift_received"
+	        android:textColor="@color/title_color" />
+	</RelativeLayout>
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gift_received_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <FrameLayout
+            android:id="@+id/user_icon_layout"
+            android:layout_width="@dimen/userdata_avatar"
+            android:layout_height="@dimen/userdata_avatar"
+            android:layout_marginTop="@dimen/margin_50" >
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="onClick" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/received_gift_icon_bg"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3" >
+	        <TextView 
+	            android:id="@+id/received_nickname"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/received_gift_nickname" />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/gift_tip1"
+	            android:textColor="@color/received_gift_nickname" />
+	    </LinearLayout>
+	    
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small" >
+	        <TextView 
+	            android:id="@+id/received_value"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="20"
+	            android:textSize="35sp"
+	            android:textColor="@color/received_gift_amount" />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/mobi"
+	            android:textColor="@color/received_gift_amount" />
+	    </LinearLayout>
+	    
+        <TextView 
+            android:id="@+id/go_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gift_tip2"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/margin_small"
+            android:clickable="true"
+            android:onClick="onClick" />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/return_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_100"
+        android:background="@drawable/gift_receiver_btn_bg"
+        android:text="@string/gift_tip3"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="onClick" />
+    
+    <TextView 
+        android:id="@+id/send_other_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/gift_receiver_btn_bg"
+        android:text="@string/gift_tip4"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+</LinearLayout>

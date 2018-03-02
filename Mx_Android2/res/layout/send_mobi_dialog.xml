@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+    	android:layout_height="wrap_content"
+    	android:paddingBottom="@dimen/margin_20"
+    	android:background="@drawable/comment_shape"
+    	android:orientation="vertical"
+    	android:gravity="center_horizontal" >
+    	
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_confirm"
+            android:textColor="@color/title_color"
+            android:layout_marginTop="@dimen/margin_20" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_normal" >
+	        <TextView 
+	            android:id="@+id/dialog_gift_amount"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/pink_text"
+	            android:textSize="@dimen/textSize_20" />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/mobi_gift"
+	            android:textColor="@color/pink_text"
+	            android:textSize="@dimen/textSize_20" />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/send"
+	            android:layout_marginLeft="@dimen/margin_3" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20" >
+	        <FrameLayout
+		        android:id="@+id/user_icon_layout"
+		        android:layout_width="@dimen/userdata_avatar"
+		        android:layout_height="@dimen/userdata_avatar" >
+		        <ImageView
+		            android:id="@+id/dialog_mobi_avatar"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/user_icon"
+		            android:scaleType="fitXY" />
+		        <ImageView
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/user_icon_bg"
+		            android:visibility="invisible"
+		            android:scaleType="fitXY" />
+	    	</FrameLayout>
+	    	<TextView 
+	    	    android:id="@+id/dialog_nickname"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center_vertical"
+	    	    android:layout_marginLeft="@dimen/margin_small"
+	    	    android:textColor="@color/leftmenu_bottom_bg_color"
+	    	    android:textSize="@dimen/title_size" />
+    	</LinearLayout>
+        
+	    <View
+	    	android:layout_width="match_parent"
+	        android:layout_height="@dimen/dividing_line"
+	        android:layout_marginTop="@dimen/margin_30"
+	        android:background="@color/login_head_line_color" />
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/margin_20"
+	        android:paddingLeft="@dimen/margin_20"
+	        android:paddingRight="@dimen/margin_20" >
+	        <TextView 
+	            android:id="@+id/dialog_send_cancel"
+	            android:layout_width="@dimen/dialog_btn_width"
+	            android:layout_height="@dimen/dialog_btn_height"
+	            android:gravity="center"
+	            android:background="@drawable/dialog_cancel_bg"
+	            android:text="@string/cancel"
+	            android:textSize="@dimen/title_size"
+	            android:textColor="@android:color/white"
+	            android:clickable="true"
+	            android:onClick="onClick" />
+	        <TextView
+	            android:id="@+id/dialog_send_sure"
+	            android:layout_width="@dimen/dialog_btn_width"
+	            android:layout_height="@dimen/dialog_btn_height"
+	            android:gravity="center"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/dialog_sure_bg"
+	            android:text="@string/sure"
+	            android:textSize="@dimen/title_size"
+	            android:textColor="@android:color/white"
+	            android:clickable="true"
+	            android:onClick="onClick" />
+	    </RelativeLayout>
+	</LinearLayout>    
+	
+</LinearLayout>

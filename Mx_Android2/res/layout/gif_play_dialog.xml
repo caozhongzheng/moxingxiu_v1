@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="@dimen/expression_dialog_width"
+        android:layout_height="@dimen/expression_dialog_height2" >
+        
+		<LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/expression_dialog_height"
+	        android:orientation="vertical"
+	        android:layout_alignParentTop="true"
+	        android:paddingTop="@dimen/margin_20"
+	        android:background="@color/gif_dialog_bg"
+	    	android:paddingBottom="@dimen/margin_big" >
+	
+		    <pl.droidsonroids.gif.GifImageView
+		        android:id="@+id/dialog_imageview"
+		        android:layout_width="@dimen/expression_dialog_image_width_height"
+		        android:layout_height="@dimen/expression_dialog_image_width_height"
+		        android:layout_gravity="center_horizontal" />
+		</LinearLayout>
+		
+		<ImageView 
+		    android:id="@+id/share_dialog_cancel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:padding="@dimen/margin_small"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginTop="@dimen/margin_normal"
+		    android:layout_marginRight="@dimen/margin_normal"
+		    android:src="@drawable/cancel_share_expression"
+		    android:onClick="onClick" />
+		
+		<ImageView 
+	        android:id="@+id/gif_weixin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="100dp"
+	        android:src="@drawable/weixin_share_expression"
+	        android:layout_alignParentBottom="true"
+	        android:onClick="onClick" />
+	    
+	    <ImageView 
+	        android:id="@+id/gif_friend"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="100dp"
+	        android:layout_alignParentRight="true"
+	        android:src="@drawable/friend_share_expression"
+	        android:layout_alignParentBottom="true"
+	        android:onClick="onClick" />
+	    
+		
+<!-- 	    <ImageView -->
+<!-- 	        android:id="@+id/dialog_cancel" -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:layout_centerHorizontal="true" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+<!-- 	        android:layout_marginBottom="@dimen/margin_50" -->
+<!-- 			android:src="@drawable/gif_dialog_cancel" -->
+<!-- 			android:onClick="onClick" /> -->
+
+<!-- 	    <ImageView -->
+<!-- 	        android:id="@+id/gif_weibo" -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+<!-- 	        android:layout_toLeftOf="@id/dialog_cancel" -->
+<!-- 	        android:layout_marginRight="@dimen/margin_24" -->
+<!-- 	        android:layout_marginBottom="@dimen/margin_30" -->
+<!-- 	        android:src="@drawable/gif_weibo" -->
+<!-- 	        android:onClick="onClick" /> -->
+	    
+<!-- 	    <ImageView -->
+<!-- 	        android:id="@+id/gif_qq" -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+<!-- 	        android:layout_toRightOf="@id/dialog_cancel" -->
+<!-- 	        android:layout_marginLeft="@dimen/margin_24" -->
+<!-- 	        android:layout_marginBottom="@dimen/margin_30" -->
+<!-- 	        android:src="@drawable/gif_qq" -->
+<!-- 	        android:onClick="onClick" /> -->
+	    
+<!-- 	    <ImageView -->
+<!-- 	        android:id="@+id/gif_weixin" -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:layout_toLeftOf="@id/dialog_cancel" -->
+<!-- 	        android:layout_marginRight="@dimen/expression_dialog_margin" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+<!-- 	        android:src="@drawable/gif_weixin" -->
+<!-- 	        android:onClick="onClick" /> -->
+	    
+<!-- 	    <ImageView -->
+<!-- 	        android:id="@+id/gif_weixin_friend" -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+<!-- 	        android:layout_toRightOf="@id/dialog_cancel" -->
+<!-- 	        android:layout_marginLeft="@dimen/expression_dialog_margin" -->
+<!-- 	        android:src="@drawable/gif_weixin_friend" -->
+<!-- 	        android:onClick="onClick" /> -->
+	</RelativeLayout>
+	
+    
+</LinearLayout>

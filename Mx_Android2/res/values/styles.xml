@@ -1,0 +1,132 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwin_show</item>
+        <item name="android:windowExitAnimation">@anim/popwin_hide</item>
+    </style>
+
+    <style name="MyDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="leftmenu_bottom_style">
+        <item name="android:textColor">#717171</item>
+        <item name="android:textSize">@dimen/leftmenu_bottom_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/leftmenu_bottom_item_drawablepadding</item>
+    </style>
+
+    <style name="leftmenu_bottom_style2">
+        <item name="android:textColor">#b1afb0</item>
+        <item name="android:textSize">@dimen/leftmenu_bottom_textsize1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/leftmenu_bottom_item_drawablepadding</item>
+    </style>
+
+    <style name="leftmenu_bottom_layout_style">
+        <item name="android:onClick">onClick</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="wealthcenter_top_text_style">
+        <item name="android:textColor">@color/wealthcenter_top_textcolor</item>
+        <item name="android:textSize">@dimen/wealthcenter_top_textsize</item>
+    </style>
+
+    <style name="wealthcenter_top_tip_text_style">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/wealthcenter_top_tip_textsize</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="retrieve_dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否浮现在activity之上,false就会在屏幕左上角 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景模糊，默认为true -->
+        <!-- <item name="android:backgroundDimEnabled">false</item> -->
+    </style>
+    
+    <style name="information_item_noclick_style">
+        <item name="android:paddingTop">@dimen/padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_24</item>
+        <item name="android:paddingRight">@dimen/margin_24</item>
+        <item name="android:background">@color/information_item_bg_color</item>
+    </style>
+
+    <style name="information_item_style">
+        <item name="android:paddingTop">@dimen/padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_24</item>
+        <item name="android:paddingRight">@dimen/margin_24</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:background">@color/information_item_bg_color</item>
+    </style>
+
+    <style name="information_sex_popwindow_style">
+        <item name="android:onClick">onClick</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:padding">@dimen/margin_bigger</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    
+    <style name="login_edittext_style">
+        <item name="android:paddingLeft">@dimen/login_edittext_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/login_edittext_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/login_edittext_padding_horizontal</item>
+        <item name="android:paddingBottom">@dimen/login_edittext_padding_horizontal</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+
+    <style name="app_progressbar">
+        <item name="android:indeterminateDrawable">@anim/loading_progress</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="btn_textview_style">
+        <item name="android:layout_width">@dimen/login_btn_width</item>
+        <item name="android:layout_height">@dimen/login_btn_height</item>
+        <item name="android:textColor">@drawable/selector_btn_textcolor</item>
+        <item name="android:background">@drawable/selector_btn_bg</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+</resources>

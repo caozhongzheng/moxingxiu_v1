@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+        android:layout_width="@dimen/dialog_width"
+    	android:layout_height="@dimen/setting_dialog_height"
+    	android:background="@drawable/comment_shape"
+    	android:orientation="vertical"
+    	android:gravity="center" >
+    	
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingTop="@dimen/margin_normal"
+	        android:orientation="vertical"
+	        android:gravity="center" >
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/current_version"
+		            android:textColor="@color/title_color"
+		            android:textSize="@dimen/title_size" />
+		        <TextView 
+		            android:id="@+id/current_version"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="2.0"
+		            android:textColor="@color/title_color"
+		            android:textSize="@dimen/title_size" />
+	        </LinearLayout>
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/app_version"
+	            android:textColor="@color/textColor_dark"
+	            android:layout_marginTop="@dimen/margin_3" />
+        </LinearLayout>
+        
+        <View
+	    	android:layout_width="match_parent"
+	        android:layout_height="@dimen/dividing_line"
+	        android:background="@color/login_head_line_color" />
+        
+        <TextView 
+            android:id="@+id/version_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_dialog_button_height"
+            android:text="@string/sure"
+            android:textColor="@color/head_layout_bg_color"
+            android:textSize="@dimen/title_size"
+            android:background="@drawable/dialog_btn_bg_center"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>

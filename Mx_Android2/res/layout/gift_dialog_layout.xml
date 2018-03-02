@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gift_dialog_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/gift_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/gift_dialog_close" />
+
+    <ImageView
+        android:id="@+id/gift_dialog_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/gift_dialog_opengift" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.moinapp.wuliao.ui.view.CircleImageView
+            android:id="@+id/gift_dialog_icon"
+            android:layout_width="@dimen/userdata_avatar"
+            android:layout_height="@dimen/userdata_avatar"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_50"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/gift_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:text="西门吹雪"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:text="@string/gift_dialog_tip1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/gift_send_btn_textsize" />
+    </LinearLayout>
+
+</FrameLayout>

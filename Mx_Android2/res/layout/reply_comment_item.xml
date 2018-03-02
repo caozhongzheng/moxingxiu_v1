@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_20" >
+
+    <FrameLayout
+        android:id="@+id/reply_user_icon_layout"
+        android:layout_width="@dimen/comment_avatar"
+        android:layout_height="@dimen/comment_avatar" >
+
+        <ImageView
+            android:id="@+id/reply_user_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/user_icon"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/user_icon_bg"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reply_user_icon_layout"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:drawableLeft="@drawable/add_friend"
+        android:drawablePadding="@dimen/margin_3"
+        android:text="@string/comment_add"
+        android:textColor="@color/comment_addfriend_textColor"
+        android:textSize="@dimen/textSize_11" />
+
+    <TextView
+        android:id="@+id/reply_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_toRightOf="@id/reply_user_icon_layout"
+        android:text="金鱼酱"
+        android:textColor="@color/comment_addfriend_textColor" />
+
+    <TextView
+        android:id="@+id/reply_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/reply_username"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_toRightOf="@id/reply_username"
+        android:text="9分钟前"
+        android:textColor="@color/comment_light_textColor"
+        android:textSize="@dimen/textSize_11" />
+
+    <TextView
+        android:id="@+id/reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/reply_username"
+        android:layout_below="@id/reply_username"
+        android:layout_marginTop="@dimen/margin_3"
+        android:text="不悔梦归处，只恨太匆匆。"
+        android:textColor="@color/comment_content_textColor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/reply_username"
+        android:layout_below="@id/reply_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/comment_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/agree_empty"
+            android:drawablePadding="@dimen/margin_3"
+            android:text="(0)"
+            android:textColor="@color/comment_light_textColor" />
+
+        <TextView
+            android:id="@+id/comment_disagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:drawableLeft="@drawable/disagree_filled"
+            android:drawablePadding="@dimen/margin_3"
+            android:text="(22)"
+            android:textColor="@color/comment_light_textColor" />
+
+        <TextView
+            android:id="@+id/comment_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:drawableLeft="@drawable/reply"
+            android:drawablePadding="@dimen/margin_3"
+            android:text="回复"
+            android:textColor="@color/comment_light_textColor" />
+    </LinearLayout>
+
+</RelativeLayout>

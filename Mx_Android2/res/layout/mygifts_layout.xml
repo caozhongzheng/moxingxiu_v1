@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userdata_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/mygift_head_layout" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/margin_normal"
+        android:background="@drawable/pi" >
+        <TextView
+            android:id="@+id/send_friend_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gift_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_marginBottom="@dimen/margin_bigger"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividing_line"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/gift_recieved"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/expression_tab_item_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/gift_received"
+            android:textColor="@color/head_layout_bg_color"
+            android:textSize="@dimen/textSize_16" />
+
+        <View
+            android:layout_width="@dimen/dividing_line"
+            android:layout_height="match_parent"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:id="@+id/gift_sent"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/expression_tab_item_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/gift_sent"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textSize_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gift_tab_cursor"
+        android:layout_width="@dimen/expression_item_line_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cursor_pink" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividing_line"
+        android:background="@color/line_bg" />
+
+    <com.moinapp.wuliao.ui.view.Mx_ViewPager
+        android:id="@+id/gift_viewpager"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

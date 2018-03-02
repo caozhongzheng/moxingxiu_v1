@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/news_comment_title_margin" >
+
+        <FrameLayout
+            android:id="@+id/comment_user_icon_layout"
+            android:layout_width="@dimen/comment_avatar"
+            android:layout_height="@dimen/comment_avatar" >
+
+            <ImageView
+                android:id="@+id/comment_user_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/circle_default"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/user_icon_bg"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_user_icon_layout"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:drawableLeft="@drawable/add_friend"
+            android:text="@string/comment_add"
+            android:textColor="@color/comment_addfriend_textColor"
+            android:textSize="@dimen/textSize_12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/comment_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_toRightOf="@id/comment_user_icon_layout"
+            android:text="金鱼酱"
+            android:textColor="@color/comment_addfriend_textColor" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/comment_username"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_toRightOf="@id/comment_username"
+            android:textColor="@color/comment_light_textColor"
+            android:textSize="@dimen/textSize_12" />
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/comment_username"
+            android:layout_below="@id/comment_username"
+            android:layout_marginTop="@dimen/margin_3"
+            android:textColor="@color/comment_content_textColor" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/comment_username"
+            android:layout_below="@id/comment_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/comment_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/agree_empty"
+                android:drawablePadding="@dimen/margin_3"
+                android:text="(0)"
+                android:textColor="@color/comment_light_textColor" />
+
+            <TextView
+                android:id="@+id/comment_disagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:drawableLeft="@drawable/disagree_empty"
+                android:drawablePadding="@dimen/margin_3"
+                android:text="(0)"
+                android:textColor="@color/comment_light_textColor" />
+
+            <TextView
+                android:id="@+id/comment_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:drawableLeft="@drawable/reply"
+                android:drawablePadding="@dimen/margin_3"
+                android:text="回复"
+                android:textColor="@color/comment_light_textColor" />
+            
+            <TextView
+                android:id="@+id/comment_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:drawableLeft="@drawable/comment_delete"
+                android:drawablePadding="@dimen/margin_3"
+                android:text="撤回"
+                android:textColor="@color/comment_light_textColor"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividing_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/news_comment_title_margin"
+        android:layout_marginRight="@dimen/news_comment_title_margin"
+        android:background="@color/line_bg" />
+
+</LinearLayout>

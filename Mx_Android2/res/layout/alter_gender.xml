@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alter_sex_male"
+        style="@style/information_sex_popwindow_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/male" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wealthcenter_content_line_height"
+        android:background="@color/login_head_line_color" />
+
+    <TextView
+        android:id="@+id/alter_sex_female"
+        style="@style/information_sex_popwindow_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/female" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wealthcenter_content_line_height"
+        android:background="@color/login_head_line_color" />
+
+    <TextView
+        android:id="@+id/alter_sex_unknown_gender"
+        style="@style/information_sex_popwindow_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown_gender" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wealthcenter_content_line_height"
+        android:background="@color/login_head_line_color" />
+
+    <TextView
+        android:id="@+id/alter_sex_cancel"
+        style="@style/information_sex_popwindow_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel" />
+
+</LinearLayout>

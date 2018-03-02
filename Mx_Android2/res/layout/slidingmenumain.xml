@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moinapp.wuliao.slidingmenu.base.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sm="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slidingmenumain"
+    android:layout_width="fill_parent"
+    sm:behindOffset="@dimen/lm_width"
+    sm:behindScrollScale="@dimen/slidingmenu_behindscrollscale"
+    sm:mode="left"
+    sm:fadeDegree="@dimen/slidingmenu_fade"
+    android:layout_height="fill_parent" />

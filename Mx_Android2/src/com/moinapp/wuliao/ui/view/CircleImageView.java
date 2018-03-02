@@ -1,0 +1,72 @@
+package com.moinapp.wuliao.ui.view;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PaintFlagsDrawFilter;
+import android.graphics.Path;
+import android.graphics.Rect;
+import android.graphics.Region;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.ImageView;
+
+@SuppressLint("NewApi")
+public class CircleImageView extends ImageView {
+
+	public CircleImageView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		if (android.os.Build.VERSION.SDK_INT >= 11 && android.os.Build.VERSION.SDK_INT < 19) {
+		    setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		} 
+	}
+
+	public CircleImageView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		if (android.os.Build.VERSION.SDK_INT >= 11 && android.os.Build.VERSION.SDK_INT < 19) {
+		    setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		} 
+	}
+
+	public CircleImageView(Context context) {
+		super(context);
+		if (android.os.Build.VERSION.SDK_INT >= 11 && android.os.Build.VERSION.SDK_INT < 19) {
+		    setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		} 
+	}
+
+	private Bitmap bitmap;
+	private Rect bitmapRect = new Rect();
+	private PaintFlagsDrawFilter pdf = new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
+	private Paint paint = new Paint();
+	{
+		paint.setStyle(Paint.Style.STROKE);
+		paint.setFlags(Paint.ANTI_ALIAS_FLAG);
+		paint.setAntiAlias(true);// 设置画笔的锯齿效果。 true是去除，大家一看效果就明白了
+	}
+	
+	private Path mPath = new Path();
+
+	public void setImageBitmap(Bitmap bitmap) {
+		this.bitmap = bitmap;
+		invalidate();
+	}
+
+	@Override
+	protected void onDraw(Canvas canvas) {
+		if (null == bitmap) {
+			return;
+		}
+		bitmapRect.set(0, 0, getWidth(), getHeight());
+		canvas.save();
+		canvas.setDrawFilter(pdf);
+		mPath.reset();
+		canvas.clipPath(mPath); // makes the clip empty
+		mPath.addCircle(getWidth() / 2, getWidth() / 2, getHeight() / 2, Path.Direction.CCW);
+		canvas.clipPath(mPath, Region.Op.REPLACE);
+		canvas.drawBitmap(bitmap, null, bitmapRect, paint);
+		canvas.restore();
+	}
+}

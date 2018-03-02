@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expression_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/head_layout_bg_color" >
+	    
+	    <ImageView
+	        android:id="@+id/title_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_back_face" />
+	
+	    <TextView
+	        android:id="@+id/title_center"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="@android:color/white"
+	        android:textSize="@dimen/title_size" />
+	
+	    <ImageView
+	        android:id="@+id/title_right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/head_share" />
+	</RelativeLayout>
+
+    <com.moinapp.wuliao.ui.view.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/expression_banner_height" >
+                <ImageView
+		            android:id="@+id/expression_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+                <CheckBox
+                    android:id="@+id/expression_collect_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                	android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_24"
+                	android:layout_marginRight="@dimen/margin_30"
+                    android:button="@drawable/checkbox_collect_bg"
+                    android:padding="@dimen/margin_small" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_bigger"
+                android:paddingBottom="@dimen/margin_big"
+                android:orientation="vertical" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_big"
+                    android:paddingRight="@dimen/margin_big"
+                    android:gravity="center_vertical" >
+					<TextView 
+					    android:id="@+id/expression_name"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textColor="@color/black"
+					    android:textSize="@dimen/textSize_16" />
+					<TextView 
+					    android:id="@+id/expression_share"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_alignParentRight="true"
+					    android:drawableRight="@drawable/expression_share"
+					    android:drawablePadding="@dimen/margin_normal"
+					    android:layout_centerVertical="true"
+					    android:textSize="@dimen/textSize_13" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:paddingLeft="@dimen/margin_big"
+                    android:paddingRight="@dimen/margin_big"
+                    android:gravity="center_vertical" >
+					<TextView 
+					    android:id="@+id/expression_category"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textColor="@color/expression_textcolor"
+					    android:textSize="@dimen/textSize_13" />
+					<TextView 
+					    android:id="@+id/expression_update"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_toRightOf="@id/expression_category"
+					    android:layout_marginLeft="@dimen/margin_normal"
+					    android:textColor="@color/expression_textcolor"
+					    android:textSize="@dimen/textSize_13" />
+					<TextView 
+					    android:id="@+id/expression_collect"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_alignParentRight="true"
+					    android:drawableRight="@drawable/expression_collect"
+					    android:drawablePadding="@dimen/margin_normal"
+					    android:textSize="@dimen/textSize_13" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/expression_download"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/expression_button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@color/head_layout_bg_color"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text="@string/expression_button_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_size"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/expression_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/expression_tab_item_height"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/detail"
+                    android:textSize="@dimen/textSize_16"
+                    android:textColor="@color/head_layout_bg_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_bg" />
+
+                <TextView
+                    android:id="@+id/expression_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/expression_tab_item_height"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/comment"
+                    android:textSize="@dimen/textSize_16"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/expression_tab_cursor"
+                android:layout_width="@dimen/expression_item_line_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cursor_expression" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <LinearLayout
+                android:id="@+id/expression_detail_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/line_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_bigger" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_bigger"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dot_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:text="@string/preview_str"
+                        android:textColor="@color/textColor_light"
+                        android:textSize="@dimen/textSize_13" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dot_line" />
+                </LinearLayout>
+
+                <com.moinapp.wuliao.ui.view.InsideViewPager
+                    android:id="@+id/detail_viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:flipInterval="30"
+                    android:persistentDrawingCache="animation" />
+
+                <LinearLayout
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_bigger"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/expression_comment_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:paddingBottom="@dimen/margin_big"
+                    android:paddingTop="@dimen/margin_big" >
+
+                    <LinearLayout
+                        android:id="@+id/comment_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:background="@drawable/comment_shape"
+                        android:padding="@dimen/margin_small" >
+
+                        <FrameLayout
+                            android:layout_width="@dimen/comment_avatar"
+                            android:layout_height="@dimen/comment_avatar"
+                            android:layout_gravity="center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/expression_comment_avatar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/circle_default"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/user_icon_bg"
+                                android:scaleType="fitXY" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="@dimen/dividing_line"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:background="@color/line_bg" />
+
+                        <EditText
+                            android:id="@+id/expression_comment_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:background="@null"
+                            android:gravity="top"
+                            android:textSize="@dimen/textSize_normal"
+                            android:lines="3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/comment_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/comment_ll"
+                        android:layout_below="@id/comment_ll"
+                        android:clickable="true"
+			            android:onClick="onClick"
+			            android:gravity="center"
+                        android:text="@string/news_comment_send"
+                        android:textColor="@android:color/white"
+            			android:textSize="@dimen/news_comment_send_textsize"
+                        android:background="@drawable/comment_send_bg_gray" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dividing_line"
+                    android:background="@color/line_bg" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+	            <com.moinapp.wuliao.ui.view.MyListView
+	                android:id="@+id/expression_lv"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:divider="@null"
+	                android:listSelector="@android:color/transparent"
+	                android:visibility="gone" />
+	
+	            <ImageView
+	                android:id="@+id/load_more"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="@dimen/margin_bigger"
+	                android:layout_marginBottom="@dimen/margin_bigger"
+	                android:clickable="true"
+	                android:onClick="onClick"
+	                android:visibility="gone"
+	                android:src="@drawable/load_more_comment" />
+            </LinearLayout>
+
+			<include layout="@layout/ad_layout" />
+            
+            <include layout="@layout/announcement_layout" />
+        </LinearLayout>
+    </com.moinapp.wuliao.ui.view.ScrollViewExtend>
+
+</LinearLayout>
